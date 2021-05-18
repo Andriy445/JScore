@@ -46,10 +46,10 @@ console.log(typeof (nullType), typeof (undefinedType));
 
 //task 7 
 
-// const login = prompt ('Your login?');
-// const email = prompt ('Your email?');
-// const password = prompt ('Your password?');
-// alert (`Dear ${login}, your email is ${email}, your password is ${password}`);
+const login = prompt ('Your login?');
+const email = prompt ('Your email?');
+const password = prompt ('Your password?');
+alert (`Dear ${login}, your email is ${email}, your password is ${password}`);
 
 //task 8 
 
