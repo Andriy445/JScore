@@ -19,13 +19,13 @@ console.log(typeof (res4));
 
 //task 2
 //a
-const num = +prompt ('');
-if (num % 2 == 0){
-console.log ('OK');
+const num = +prompt('');
+if (num % 2 == 0) {
+    console.log('OK');
 }
 //b
 if (num % 7 == 0) {
-    console.log ('ok');
+    console.log('ok');
 }
 
 //task 3
@@ -34,17 +34,117 @@ const arr = [];
 //1
 arr[0] = 12;
 //2
-arr [1] = "String";
+arr[1] = "String";
 //3
 arr[2] = true;
 //4
-arr [3] = null;
+arr[3] = null;
 //5
-console.log (arr.length);
+console.log(arr.length);
 //6
-arr [4] = prompt ('');
+arr[4] = prompt('');
 //7
-console.log (arr[4]);
+console.log(arr[4]);
 //8
 arr.shift();
 console.log(arr);
+
+//task 4 
+
+let cities = ["Rome", "Lviv", "Warsaw"];
+console.log(cities.join("*"));
+
+//task 5
+
+const isAdult = +prompt('Your age?');
+
+if (isAdult >= 18) {
+    console.log("Ви досягли повнолітнього віку");
+
+} else if (isAdult < 18) {
+    console.log("Ви ще надто молоді");
+} else {
+    console.log('error');
+}
+
+// task 6
+
+const a = +prompt("");
+const b = +prompt("");
+const c = +prompt("");
+
+let p;
+let s;
+if (a > 0 && b > 0 && c > 0 && (a + b > c) && (a + c > b) && (b + c > a)) {
+    p = (a + b + c) / 2;
+    s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    console.log(+s.toFixed(3));
+} else {
+    alert.log("Incorrect Data");
+
+}
+
+if (a ** 2 == (b ** 2) + (c ** 2)) {
+    console.log("Це прямокутній трикутник");
+} else if (b == (a ** 2) + (c ** 2)) {
+    console.log("Це прямокутній трикутник");
+} else if (c == (a ** 2) + (b ** 2)) {
+    console.log("Це прямокутній трикутник");
+
+} else {
+    console.log("Інакший трикутник");
+}
+
+//task 7
+
+let hour = 23;
+
+//a
+
+if (hour > 23 && hour < 5) {
+    console.log("Доброї ночі");
+} else if (hour >= 5 && hour < 11) {
+    console.log("Доброго ранку");
+} else if (hour >= 11 && hour < 17) {
+    console.log("Доброго дня"); {}
+} else if (hour >= 17 && hour <= 23) {
+    console.log("Доброго вечора");
+}
+// b
+
+switch (hour) {
+    case 24:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        console.log("Доброї ночі");
+        break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+        console.log("Доброго ранку");
+        break;
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+        console.log("Доброго дня");
+        break;
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+        console.log("Доброго вечора");
+        break;
+    default:
+        console.log("Unknown number");
+}
