@@ -37,6 +37,18 @@ try {
 }
 
 // task 3
+class User {
+    constructor (username , password) {
+        this.username = username;
+        this.password = password;
+    }
+}
+let a = "Valera";
+let b = "asdf";
+
+const person = new User (a, b);
+console.log (person);
+
 
 
 
@@ -57,10 +69,7 @@ let newArr = [];
 
 function showUsers(ids) {
     for (let i = 0; i < ids.length; i++) {
-        showUser(ids[i]);
-        let correctId = {};
-        correctId.ID = ids[i];
-        newArr.push(correctId);
+        newArr.push(showUser(ids[i]));
         if (ids[i] < 0) {
             newArr.splice(i);
         }
