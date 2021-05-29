@@ -38,7 +38,31 @@ try {
 
 // task 3
 
+const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+class MontExeptions {
+    constructor(message) {
+        this.name = message;
+    }
+    exeption() {
+        throw new Error(this.name);
+    }
+}
 
+function showMonthName(month) {
+    if (month >= 1 && month <= 12 ){
+        return (monthNames[month - 1]);
+    }
+        const wrongMonth = new MontExeptions("Incorect month number");
+        wrongMonth.exeption();
+}
+try {
+    console.log(showMonthName(5));
+} catch (exeption) {
+    console.log(exeption.name);
+    console.log(exeption.message);
+}
 
 
 
@@ -56,6 +80,7 @@ console.log(showUser(+prompt("Your ID ?")));
 
 
 let newArr = [];
+
 function showUsers(ids) {
     for (let i = 0; i < ids.length; i++) {
         newArr.push(showUser(ids[i]));
@@ -70,3 +95,4 @@ try {
 } finally {
     console.log(newArr);
 }
+
