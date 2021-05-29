@@ -37,17 +37,7 @@ try {
 }
 
 // task 3
-class User {
-    constructor (username , password) {
-        this.username = username;
-        this.password = password;
-    }
-}
-let a = "Valera";
-let b = "asdf";
 
-const person = new User (a, b);
-console.log (person);
 
 
 
@@ -66,14 +56,9 @@ console.log(showUser(+prompt("Your ID ?")));
 
 
 let newArr = [];
-
 function showUsers(ids) {
     for (let i = 0; i < ids.length; i++) {
         newArr.push(showUser(ids[i]));
-        if (ids[i] < 0) {
-            newArr.splice(i);
-        }
-
     }
     return newArr;
 }
