@@ -53,8 +53,6 @@
 
 
 
- // var el = document.getElementById('selectId');
- // el.remove(el.selectedIndex);
 
 
  //task5
