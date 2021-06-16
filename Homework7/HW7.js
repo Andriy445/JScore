@@ -44,7 +44,7 @@
  // task 4
 
 
- //  const deleteButton = document.querySelector("button");
+//   const deleteButton = document.querySelector("button");
 
  //  deleteButton.onclick = function () {
  //      const names = document.getElementById('names');
