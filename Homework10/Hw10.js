@@ -47,31 +47,7 @@ console.log(mul(null, "str", false, true));
 
 
 //task 4
-let server = {
-  data: 0,
-  convertToString: () => {
-  return this.data + "";
-      
-     }
-  };
 
-  let client = {
-     server: server,
-     result: "",
-     calc:  () => {
-  this.server.data = data;
-  this.server.convertToString(this.notification());
-     },
-     notification:  () => {
-  return  this.result ;
-     }
-  };
-
-
-
-  client.calc(123);
-  console.log(client.result); 
-  console.log(typeof (client.result));
   
 
 //task 5 
