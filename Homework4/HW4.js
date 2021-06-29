@@ -82,10 +82,12 @@ console.log(showUser(+prompt("Your ID ?")));
 let newArr = [];
 
 function showUsers(ids) {
-    for (let i = 0; i < ids.length; i++) {
-        newArr.push(showUser(ids[i]));
-    }
-    return newArr;
+    let result = [];
+ids.forEach(function (id) {
+try {
+    
+}    
+});
 }
 
 try {
