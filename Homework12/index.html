@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- task 1 
+        <button onclick="getVote()">Vote</button>
+    <script>
+        function getVote() {
+            const date = new Date;
+            const ajaxRequest = new XMLHttpRequest
+            ajaxRequest.open('GET', "http://127.0.0.1:8080/", true);
+
+            ajaxRequest.onreadystatechange = function () {
+                if (ajaxRequest.readyState != 4) return;
+                if (ajaxRequest.status != 200) {
+                    alert("Error");
+                } else {
+                    document.querySelector("button").innerHTML = `Your vote is accepted: ${date}`
+                }
+            }
+            ajaxRequest.send();
+        }
+    </script> -->
+
+    <!-- task 2 
+        <button onclick="downloadBooks()">Download books</button>
+    <ul> </ul>
+    <script>
+        function downloadBooks() {
+            const list = document.querySelector("body")
+            const ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.responseType = "json"
+            ajaxRequest.open('GET', 'books.json', true);
+            ajaxRequest.onload = function () {
+                const result = ajaxRequest.response
+                let authors = []
+                for (let i = 0; i < result.length; i++)
+                    authors.push(result[i].author)
+                for (let j = 0; j < authors.length; j++) {
+                    let listElem = document.createElement("li")
+                    listElem.textContent = authors[j]
+                    list.appendChild(listElem)
+                } 
+            }
+
+
+            ajaxRequest.send();
+        }
+    </script> -->
+
+
+    <script src="HW12.js"></script>
+</body>
+
+</html>
